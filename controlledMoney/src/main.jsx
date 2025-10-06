@@ -1,10 +1,10 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './FinanceApp.jsx'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import FinanceApp from './FinanceApp';
+import './index.css';
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <FinanceApp />
+  </React.StrictMode>
+);
